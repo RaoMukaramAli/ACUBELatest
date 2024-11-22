@@ -1,0 +1,33 @@
+.sustainHeading h2 {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-semi-bold);
+    text-align: center;
+    padding: 0 0 25px 0;
+}
+
+.SustainableSecondRow{
+    justify-content: center;
+    padding-top: 30px;
+}
+
+@media (min-width:768px) {
+
+    .sustainHeading h2 {
+        font-size: var(--fs-400);
+        font-weight: var(--fw-bold);
+        padding: 0 0 45px 0;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .sustainHeading h2 {
+        font-size: var(--fs-700);
+        font-weight: var(--fw-semi-bold);
+        padding: 0 0 75px 0;
+    }
+
+    .SustainableSecondRow{
+        padding-top: 45px;
+    }
+}

@@ -1,0 +1,122 @@
+.successfulHeading h2 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  padding: 25px 0;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  max-width: fit-content;
+  margin-bottom: 20px;
+}
+
+.cardContent {
+  position: absolute;
+  padding: 18px;
+  left: 0;
+  bottom: 0;
+}
+
+.cardContent h3 {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-medium);
+  margin-bottom: 12px;
+}
+
+.cardContent p {
+  font-size: var(--fs-100);
+  color: var(--clr-neutral-100);
+  display: -webkit-box;
+  max-width: 40ch;
+  --webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.radius {
+  border-radius: 24px;
+}
+
+.nvaBtns {
+  background-color: var(--clr-secondary-400);
+  color: var(--clr-neutral-100);
+  border-radius: 12px;
+  font-weight: var(--fw-semi-bold);
+  padding: 7px 17px;
+}
+
+.btns {
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .readMoreBtn {
+    font-size: 13px;
+  }
+
+  .cardContent {
+    bottom: 16px;
+  }
+
+  .successfulHeading h2 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+    padding: 0 0 30px 0;
+  }
+
+  .nvaBtns {
+    font-size: 12px;
+    font-weight: var(--fw-semi-bold);
+    padding: 8px 10px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardContent span {
+    margin-bottom: 20px;
+  }
+
+  .cardContent {
+    padding: 25px;
+  }
+
+  .successfulHeading h2 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+    padding: 0 0 75px 0;
+  }
+
+  .nvaBtns {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-semi-bold);
+    padding: 9px 8px;
+    border: 0;
+  }
+
+  .cardContent h3 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .cardContent span {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-regular);
+  }
+
+  .readMoreBtn {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-medium);
+  }
+}
+
+@media (min-width: 1600px) {
+  .cardContent span {
+    margin-bottom: 24px;
+  }
+  .cardContent {
+    padding: 32px;
+  }
+}
