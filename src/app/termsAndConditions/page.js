@@ -1,5 +1,3 @@
-import Accordian from "@/components/Accordian/Accordian";
-import { termsAndConditions } from "@/lib/data/termsAndConditions";
 import React from "react";
 
 export const metadata = {
@@ -19,7 +17,6 @@ const TermsAndConditions = () => {
           </p>
         </div>
         <div>
-          <Accordian data={termsAndConditions} />
         </div>
       </div>
     </section>

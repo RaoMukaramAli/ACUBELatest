@@ -1,5 +1,3 @@
-import Accordian from "@/components/Accordian/Accordian";
-import { privacyPolicy } from "@/lib/data/privacyPolicy";
 import React from "react";
 
 export const metadata = {
@@ -20,7 +18,6 @@ const PrivacyPolicy = () => {
           </p>
         </div>
         <div>
-          <Accordian data={privacyPolicy} />
         </div>
       </div>
     </section>

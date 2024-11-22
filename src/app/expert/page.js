@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./expert.module.css";
-import VolunteerForm from "@/components/VolunteerForm/VolunteerForm";
 
 export const metadata = {
   title: "Become an Expert | ACUBE Research Network  ",
@@ -17,7 +16,6 @@ const Expert = () => {
       </div>
       <div className="row">
         <div className="col-md-12">
-          <VolunteerForm />
         </div>
       </div>
     </div>
