@@ -3,7 +3,7 @@ import React from "react";
 export const metadata = {
   title: "Privacy Policy | ACUBE Research Network  ",
   description:
-    "ACUBE Research Network   is committed to safeguarding your privacy. This Privacy Policy outlines how we collect, use, and protect your information.",
+    "ACUBE Research Network is committed to safeguarding your privacy. This Privacy Policy outlines how we collect, use, and protect your information.",
 };
 const PrivacyPolicy = () => {
   return (

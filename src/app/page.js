@@ -8,8 +8,7 @@ import Testimonials from "@/components/Home/Scholars/Testimonials";
 export const metadata = {
   title: "Home | ACUBE Research Network",
   description:
-    "The ACUBE Research Network Trust (ABT) is an independent, non-political, charitable institution founded by Farah Deeba Akram in 2005 with the mission to serve the less privileged  by providing education, food, and health facilities and empower them to break the vicious cycle of poverty through integrated educational, ethical and social development",
-};
+    "The ACUBE Research Network "};
 export default function Home() {
   return (
     <main>
