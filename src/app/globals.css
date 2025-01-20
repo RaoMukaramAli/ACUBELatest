@@ -466,7 +466,7 @@ sub {
 .navbar-collapse {
   position: fixed;
   left: -100%;
-  top: 48px;
+  top: 73px;
   background-color: var(--clr-neutral-100);
   width: 80%;
   height: 100vh;
@@ -614,7 +614,7 @@ sub {
   }
 
   .navbar-collapse {
-    top: 59px;
+    top: 90px;
   }
 
   #scholar .swiper-wrapper {

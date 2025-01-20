@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <Header />
         {/* <Banner/> */}
         {children}
-        <Analytics />
+        <Analytics />  
         <Footer />
       </body>
     </html>

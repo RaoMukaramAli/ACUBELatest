@@ -8,6 +8,7 @@ import Image from "next/image";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 const Whatwe = () => {
   const ref = useRef(null);
@@ -27,73 +28,77 @@ const Whatwe = () => {
           </div>
           <div className={` col-md-6  col-lg-4  `}>
             <div className={styles.card}>
-              <Image
-                className={`${styles.radius}`}
-                src={img1}
-                width={480}
-                height={550}
-                alt="education for children"
-              />
+              <Link href="/calls" passHref className={`${styles.cardLink}`}>
+                <Image
+                  className={`${styles.radius}`}
+                  src={img1}
+                  width={480}
+                  height={550}
+                  alt="Consultation call"
+                />
 
-              <div className={` ${styles.cardContent}`}>
-                <h3>Consultation Calls </h3>
-                <p>
-                  ACube calls are 30-60 minute or longer telephone conversations
-                  with client professionals and may occasionally take place over
-                  video (e.g. Zoom, Teams). Calls are the most common way we
-                  work with experts....
-                </p>
+                <div className={` ${styles.cardContent}`}>
+                  <h3>Consultation Calls </h3>
+                  <p>
+                    ACube calls are 30-60 minute or longer telephone
+                    conversations with client professionals and may occasionally
+                    take place over video (e.g. Zoom, Teams). Calls are the most
+                    common way we work with experts....
+                  </p>
 
-                <div
-                  className={`d-flex justify-content-between  ${styles.btns}`}
-                >
-                  <a className="readMoreBtnYellow" href="/calls">
-                    Read more
-                  </a>
-                  {/* <button className={styles.nvaBtns}> Donate Now </button> */}
-                  <PrimaryButton isLink={true} href="/contactus">
-                    Contact Us
-                  </PrimaryButton>
+                  <div
+                    className={`d-flex justify-content-between  ${styles.btns}`}
+                  >
+                    <a className="readMoreBtnYellow" href="/calls">
+                      Read more
+                    </a>
+                    <PrimaryButton isLink={true} href="/contactus">
+                      Contact Us
+                    </PrimaryButton>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className={` col-md-6  col-lg-4  `}>
-            <div className={styles.card}>
-              <Image
-                className={`${styles.radius}`}
-                src={food}
-                width={480}
-                height={550}
-                alt="education for children"
-              />
+            <div className={`${styles.card}`}>
+              <Link href="/surveys" passHref className={`${styles.cardLink}`}>
+                <Image
+                  className={`${styles.radius}`}
+                  src={food}
+                  width={480}
+                  height={550}
+                  alt="Bespoke Surveys"
+                />
 
-              <div className={` ${styles.cardContent}`}>
-                <h3> Bespoke Surveys </h3>
-                <p>
-                  ACube surveys are online questionnaires. They begin with
-                  screening questions to ensure that the topic is correctly
-                  suited to your experience, and typically take no longer than
-                  20 minutes to complete....
-                </p>
+                <div className={` ${styles.cardContent}`}>
+                  <h3> Bespoke Surveys </h3>
+                  <p>
+                    ACube surveys are online questionnaires. They begin with
+                    screening questions to ensure that the topic is correctly
+                    suited to your experience, and typically take no longer than
+                    20 minutes to complete....
+                  </p>
 
-                <div
-                  className={`d-flex justify-content-between  ${styles.btns}`}
-                >
-                  <a className="readMoreBtnYellow" href="/advisory">
-                    Read more
-                  </a>
-                  <PrimaryButton isLink={true} href="/contactus">
-                    Contact Us
-                  </PrimaryButton>
-                  {/* <button className={styles.nvaBtns}> Donate Now </button> */}
+                  <div
+                    className={`d-flex justify-content-between  ${styles.btns}`}
+                  >
+                    <a className="readMoreBtnYellow" href="/surveys">
+                      Read more
+                    </a>
+                    <PrimaryButton isLink={true} href="/contactus">
+                      Contact Us
+                    </PrimaryButton>
+                    {/* <button className={styles.nvaBtns}> Donate Now </button> */}
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
 
           <div className={` col-md-6  col-lg-4  `}>
             <div className={styles.card}>
+              <Link href="/advisory" passHref className={`${styles.cardLink}`}>
               <Image
                 className={`${styles.radius}`}
                 src={care}
@@ -113,7 +118,7 @@ const Whatwe = () => {
                 <div
                   className={`d-flex justify-content-between  ${styles.btns}`}
                 >
-                  <a className="readMoreBtnYellow" href="/surveys">
+                  <a className="readMoreBtnYellow" href="/advisory">
                     Read more
                   </a>
                   {/* <button className={styles.nvaBtns}> Donate Now </button> */}
@@ -122,7 +127,8 @@ const Whatwe = () => {
                   </PrimaryButton>
                 </div>
               </div>
-            </div>
+              </Link>
+            </div> 
           </div>
         </motion.div>
       </div>
