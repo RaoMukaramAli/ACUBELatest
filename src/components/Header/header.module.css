@@ -1,6 +1,9 @@
 .navbar {
   padding: 9px 0;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures proper spacing between toggler and logo */
 }
 .navBtn{
   background-color: var(--clr-secondary-400);
@@ -15,6 +18,13 @@
     background-color: var(--clr-primary-400);
     color: var(--clr-neutral-100);
 }
+ .siteLogo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 7px;
+    z-index: 1;
+ }
 
  .bar {
     display: block;
@@ -50,6 +60,10 @@
     .navBtn{
       font-size: var(--fs-50);
     }
+    .siteLogo {
+      top: 15px;
+      max-width: 96px;
+    }
   
      .navbar {
       padding: 14px 0;
@@ -61,15 +75,22 @@
     .navBtn{ margin: 0;    padding: 11.5px 23.5px; font-size: var(--fs-100); }
   }
   @media (min-width:1200px) {
+    
     .navbar {
         padding: 15px 0;
         
     }
-    
+    .siteLogo {
+      max-width: 133px;
+      top: 7px;
+    }
   }
   @media (min-width:1600px) {
     .navBtn {
         font-size: var(--fs-200);
     }
+    .siteLogo {
+      max-width: 141px;
+    }
   }
-  
+ 
