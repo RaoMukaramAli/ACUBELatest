@@ -8,7 +8,8 @@ import Testimonials from "@/components/Home/Scholars/Testimonials";
 export const metadata = {
   title: "Home | ACUBE Research Network",
   description:
-    "The ACUBE Research Network "};
+    "ACUBE Research Network is a market research and business consulting firm. that offers a broad range of services to clients across various industries. The company's mission is to deliver high-quality research and consulting services that help clients achieve their business objectives.",
+};
 export default function Home() {
   return (
     <main>

@@ -28,7 +28,7 @@ const ExploreEducationalPrograms = () => {
                 />
 
                 <div className={`${styles.cardText} ${styles.testbox}`}>
-                  <h3> ACUBE Research Network Taleem-o-Tarbiyat Schools </h3>
+                  <h3> ACUBE Research Network  </h3>
                   <span>
                     Presently, 1000 students are getting free education in two
                     branches of ABTTS located in Lahore and Muridka from...{" "}
