@@ -29,7 +29,7 @@ export const healthCareProgramList = [
 
 export const healthCareProgram = {
   title: "ACUBE Research Network Surveys",
-  imageUrl: "/images/care.png",
+  imageUrl: "/images/Surveys.jpg",
   description:
     "Whether you’re evaluating market entry, testing a new idea, or refining your messaging, our team of experienced quantitative researchers is here to help. We connect you with the right audiences and execute surveys designed to meet your research objectives—all within your timeline. From crafting targeted studies to delivering actionable insights, we ensure your data empowers confident, strategic decisions.",
   list: healthCareProgramList,

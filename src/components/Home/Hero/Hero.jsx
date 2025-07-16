@@ -1,25 +1,24 @@
-
 import React from "react";
 import styles from "./hero.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <div className={styles.videoContainer}>
-      <video autoPlay loop muted className={styles.backgroundVideo}>
-        <source src="/video/HeroSection1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className={styles.overlayContent}>
-        <h1 className={styles.heading}>ACUBE Research Network</h1>
-        <p className={styles.description}>
-          Linking Top Professionals to Renowned Industry Experts
-        </p>
+      <Image
+        src="/images/HeroSectionImg.jpg"
+        alt="Background Image"
+        fill
+        priority
+        className={styles.backgroundImage}
+      />
+      <div className={`mt-5 pt-5 ${styles.overlayContent}`}>
         <div className={styles.buttonContainer}>
-          <Link href="/contactus">
+          <Link href="/client">
             <button className={styles.button}>Become a Client</button>
           </Link>
-          <Link href="/contactus">
+          <Link href="/expert">
             <button className={styles.button}>Become an Expert</button>
           </Link>
         </div>

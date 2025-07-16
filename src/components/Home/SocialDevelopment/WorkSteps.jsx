@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./WorkSteps.module.css";
 
 const WorkSteps = () => {
   return (
@@ -24,10 +25,10 @@ const WorkSteps = () => {
             {/* Step 1 */}
             <div className="col-md-4">
               <div
-                className="d-flex justify-content-center align-items-center bg-white border border-light rounded-circle shadow"
+                className={`d-flex justify-content-center align-items-center border border-light rounded-circle shadow ${styles.stepCircle}`}
                 style={{ width: "64px", height: "64px", margin: "0 auto" }}
               >
-                <span className="fw-bold text-muted">1</span>
+                <span className="fw-bold text-muted ">1</span>
               </div>
               <h3 className="fw-semibold mt-4">Submit a project</h3>
               <p className="text-muted mt-3">
@@ -39,7 +40,7 @@ const WorkSteps = () => {
             {/* Step 2 */}
             <div className="col-md-4">
               <div
-                className="d-flex justify-content-center align-items-center bg-white border border-light rounded-circle shadow"
+                className={`d-flex justify-content-center align-items-center border border-light rounded-circle shadow ${styles.stepCircle}`}
                 style={{ width: "64px", height: "64px", margin: "0 auto" }}
               >
                 <span className="fw-bold text-muted">2</span>
@@ -54,7 +55,7 @@ const WorkSteps = () => {
             {/* Step 3 */}
             <div className="col-md-4">
               <div
-                className="d-flex justify-content-center align-items-center bg-white border border-light rounded-circle shadow"
+                className={`d-flex justify-content-center align-items-center border border-light rounded-circle shadow ${styles.stepCircle}`}
                 style={{ width: "64px", height: "64px", margin: "0 auto" }}
               >
                 <span className="fw-bold text-muted">3</span>

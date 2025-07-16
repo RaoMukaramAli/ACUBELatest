@@ -1,25 +1,40 @@
-import React from "react";
-import styles from "./client.module.css";
+"use client"; // Required for Calendly component
 
-export const metadata = {
-  title: "Become a Client | ACUBE Research Network  ",
-  description:
-   "Become ACUBE's client and spread the mission of ACUBE Research Network.",
-  };
-const Client = () => {
+import React from "react";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import Head from "next/head";
+import { InlineWidget } from "react-calendly";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+const ExpertPage = () => {
   return (
-    <div className={`container ${styles.top_static_section}`} id="volunteer">
-      <div className={`row ${styles.internWrap}`}>
-        <div className={styles.internHeading}>
-          <h2> Become a Client </h2>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-12">
-        </div>
-      </div>
-    </div>
+    <>
+      <Head>
+        <title>Expert Consultation | Our Platform</title>
+        <meta name="description" content="Book a session with our experts" />
+      </Head>
+        <Card className="shadow-sm">
+          <Card.Body>
+            <div style={{ minHeight: "800px", width: "100%" }}>
+              <InlineWidget
+                url="https://calendly.com/team-acuberesearchnetwork/acube-research-network"
+                styles={{
+                  height: "800px",
+                  width: "100%",
+                }}
+                pageSettings={{
+                  backgroundColor: "ffffff",
+                  hideEventTypeDetails: false,
+                  hideGdprBanner: true,
+                  primaryColor: "00a2ff",
+                  textColor: "4d5055",
+                }}
+              />
+            </div>
+          </Card.Body>
+        </Card>
+    </>
   );
 };
 
-export default Client;
+export default ExpertPage;

@@ -8,7 +8,7 @@ const Value = () => {
   const isInView = useInView(ref, { once: true }); // Animation triggers once when it enters view
 
   return (
-    <section className={`spacing ${styles.bgColor}`}>
+    <section className="spacing bg-white">
       <div className="container">
         <motion.div
           ref={ref}
@@ -23,11 +23,6 @@ const Value = () => {
                 className="text-center mx-auto mb-5"
                 style={{ maxWidth: "600px" }}
               >
-                <div className="badge bg-gradient text-white px-4 py-1.5 rounded-3">
-                  <p className="text-xs font-weight-semibold text-uppercase">
-                    130+ Handcoded Blocks
-                  </p>
-                </div>
                 <h2 className="mt-4 display-5 font-weight-bold text-dark">
                   The Value We Offer
                 </h2>

@@ -1,5 +1,4 @@
 import React from "react";
-import ExploreEducationalPrograms from "@/components/ExploreEducationalPrograms/ExploreEducationalPrograms";
 import AlamBibiEducationProgram from "@/components/AlamBibiEducationProgram/AlamBibiEducationProgram";
 
 export const metadata = {

@@ -72,21 +72,25 @@ const Header = () => {
             }`}
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="ms-4 navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item" onClick={closeNav}>
-                <Link className="nav-link" aria-current="page" href="/">
+                <Link className="fw-bold nav-link" aria-current="page" href="/">
                   Home
                 </Link>
               </li>
 
               <li className="nav-item" onClick={closeNav}>
-                <Link className="nav-link" aria-current="page" href="/aboutus">
+                <Link
+                  className="fw-bold nav-link"
+                  aria-current="page"
+                  href="/aboutus"
+                >
                   About Us
                 </Link>
               </li>
-              <li className="nav-item dropdown">
+              <li className="fw-bold nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle`}
+                  className={`fw-bold nav-link dropdown-toggle`}
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -110,11 +114,16 @@ const Header = () => {
                       Surveys
                     </Link>
                   </li>
+                  <li onClick={closeNav}>
+                    <Link className="dropdown-item" href="/itServices">
+                      IT Services
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li className="nav-item" onClick={closeNav}>
                 <Link
-                  className="nav-link"
+                  className=" fw-bold nav-link"
                   aria-current="page"
                   href="/industries"
                 >

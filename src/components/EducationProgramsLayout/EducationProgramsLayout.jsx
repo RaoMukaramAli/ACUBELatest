@@ -31,7 +31,7 @@ const EducationProgramsLayout = ({ title, description, list, imageUrl }) => {
                 })}
               </div>
 
-              <PrimaryButton isLink={true} href="/contactus">
+              <PrimaryButton isLink={true} href="/client">
                 Contact Us
               </PrimaryButton>
             </div>

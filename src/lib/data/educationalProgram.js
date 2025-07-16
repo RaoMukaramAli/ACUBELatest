@@ -18,7 +18,7 @@ export const educationalProgramList = [
 
 export const educationalProgram = {
   title: " Expert Network Calls",
-  imageUrl: "/images/Education.png",
+  imageUrl: "/images/Consultation.jpg",
   description:
     "Engage with industry experts from our network of highly qualified professionals on any topic of interest. Lead dynamic, tailored conversations to meet your needs, asking follow-up questions to uncover nuances, challenges, and opportunities. This direct exchange allows you to gain unique insights, address specific concerns, and discover what might otherwise be overlooked—all while keeping your research confidential. Empower your decisions with exclusive, actionable expertise:",
   list: educationalProgramList,

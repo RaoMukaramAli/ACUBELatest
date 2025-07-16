@@ -68,10 +68,15 @@ const Footer = () => {
                         Surveys
                       </Link>
                     </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item" href="/itServices">
+                        IT Services
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="/contactus">Become a Client</a>
+                  <a href="/client">Become a Client</a>
                 </li>
                 <li>
                   <a href="/industries">Industries</a>

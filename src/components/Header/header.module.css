@@ -1,5 +1,5 @@
 .navbar {
-  padding: 9px 0;
+  padding: 0px 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@
     }
   
      .navbar {
-      padding: 14px 0;
+      padding: 7px 0;
     }
   }
   
@@ -77,7 +77,7 @@
   @media (min-width:1200px) {
     
     .navbar {
-        padding: 15px 0;
+        padding: 7px 0;
         
     }
     .siteLogo {

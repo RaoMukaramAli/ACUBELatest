@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import img1 from "../../../../public/images/Education.png";
-import food from "../../../../public/images/food.png";
-import care from "../../../../public/images/care.png";
+import img1 from "../../../../public/images/Consultation.jpg";
+import Surveys from "../../../../public/images/Surveys.jpg";
+import Project from "../../../../public/images/Project.jpg";
+import ITService from "../../../../public/images/ITService.jpg"; // Add your IT Services image
 import styles from "./WhatWe.module.css";
 import Image from "next/image";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
@@ -12,123 +13,144 @@ import Link from "next/link";
 
 const Whatwe = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // Animation triggers once when it enters view
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section id="whatwedo" className="spacing">
       <div className="container">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 50 }} // Initial state: hidden and slightly below
-          animate={isInView ? { opacity: 1, y: 0 } : {}} // Animate to full opacity and position when in view
-          transition={{ duration: 0.6, ease: "easeOut" }} // Animation duration and easing
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="row"
         >
           <div className={styles.successfulHeading}>
-            <h2> What We Do </h2>
+            <h2>Our Services</h2>
           </div>
-          <div className={` col-md-6  col-lg-4  `}>
+
+          {/* Card 1 */}
+          <div className={`col-md-6 col-lg-3`}>
             <div className={styles.card}>
               <Link href="/calls" passHref className={`${styles.cardLink}`}>
-                <Image
-                  className={`${styles.radius}`}
-                  src={img1}
-                  width={480}
-                  height={550}
-                  alt="Consultation call"
-                />
+                <div className={styles.imageContainer}>
+                  <Image
+                    className={`${styles.radius} ${styles.cardImage}`}
+                    src={img1}
+                    width={480}
+                    height={550}
+                    alt="Consultation call"
+                  />
+                  <div className={styles.imageOverlay}>
+                    <h3 className={styles.cardTitle}>Consultation Calls</h3>
+                  </div>
+                </div>
 
-                <div className={` ${styles.cardContent}`}>
-                  <h3>Consultation Calls </h3>
-                  <p>
-                    ACube calls are 30-60 minute or longer telephone
-                    conversations with client professionals and may occasionally
-                    take place over video (e.g. Zoom, Teams). Calls are the most
-                    common way we work with experts....
-                  </p>
-
+                <div className={`${styles.cardContent}`}>
                   <div
-                    className={`d-flex justify-content-between  ${styles.btns}`}
+                    className={`mx-auto d-flex justify-content-between ${styles.btns}`}
                   >
-                    <a className="readMoreBtnYellow" href="/calls">
-                      Read more
-                    </a>
-                    <PrimaryButton isLink={true} href="/contactus">
-                      Contact Us
+                    <PrimaryButton isLink={true} href="/calls">
+                      Explore Further
                     </PrimaryButton>
                   </div>
                 </div>
               </Link>
             </div>
           </div>
-          <div className={` col-md-6  col-lg-4  `}>
-            <div className={`${styles.card}`}>
+
+          {/* Card 2 */}
+          <div className={`col-md-6 col-lg-3`}>
+            <div className={styles.card}>
               <Link href="/surveys" passHref className={`${styles.cardLink}`}>
-                <Image
-                  className={`${styles.radius}`}
-                  src={food}
-                  width={480}
-                  height={550}
-                  alt="Bespoke Surveys"
-                />
+                <div className={styles.imageContainer}>
+                  <Image
+                    className={`${styles.radius} ${styles.cardImage}`}
+                    src={Surveys}
+                    width={480}
+                    height={550}
+                    alt="Bespoke Surveys"
+                  />
+                  <div className={styles.imageOverlay}>
+                    <h3 className={styles.cardTitle}>Bespoke Surveys</h3>
+                  </div>
+                </div>
 
-                <div className={` ${styles.cardContent}`}>
-                  <h3> Bespoke Surveys </h3>
-                  <p>
-                    ACube surveys are online questionnaires. They begin with
-                    screening questions to ensure that the topic is correctly
-                    suited to your experience, and typically take no longer than
-                    20 minutes to complete....
-                  </p>
-
+                <div className={`${styles.cardContent}`}>
                   <div
-                    className={`d-flex justify-content-between  ${styles.btns}`}
+                    className={`mx-auto d-flex justify-content-between ${styles.btns}`}
                   >
-                    <a className="readMoreBtnYellow" href="/surveys">
-                      Read more
-                    </a>
-                    <PrimaryButton isLink={true} href="/contactus">
-                      Contact Us
+                    <PrimaryButton isLink={true} href="/surveys">
+                      Explore Further
                     </PrimaryButton>
-                    {/* <button className={styles.nvaBtns}> Donate Now </button> */}
                   </div>
                 </div>
               </Link>
             </div>
           </div>
 
-          <div className={` col-md-6  col-lg-4  `}>
+          {/* Card 3 */}
+          <div className={`col-md-6 col-lg-3`}>
             <div className={styles.card}>
               <Link href="/advisory" passHref className={`${styles.cardLink}`}>
-              <Image
-                className={`${styles.radius}`}
-                src={care}
-                width={480}
-                height={550}
-                alt="education for children"
-              />
-
-              <div className={` ${styles.cardContent}`}>
-                <h3> Longer Term Advisory</h3>
-                <p>
-                  From time to time, clients partner with ACube to identify
-                  senior executives with relevant experience who can help them
-                  on a longer term basis....
-                </p>
-
-                <div
-                  className={`d-flex justify-content-between  ${styles.btns}`}
-                >
-                  <a className="readMoreBtnYellow" href="/advisory">
-                    Read more
-                  </a>
-                  {/* <button className={styles.nvaBtns}> Donate Now </button> */}
-                  <PrimaryButton isLink={true} href="/contactus">
-                    Contact Us
-                  </PrimaryButton>
+                <div className={styles.imageContainer}>
+                  <Image
+                    className={`${styles.radius} ${styles.cardImage}`}
+                    src={Project}
+                    width={480}
+                    height={550}
+                    alt="Longer Term Advisory"
+                  />
+                  <div className={styles.imageOverlay}>
+                    <h3 className={styles.cardTitle}>Longer Term Advisory</h3>
+                  </div>
                 </div>
-              </div>
+
+                <div className={`${styles.cardContent}`}>
+                  <div
+                    className={`mx-auto d-flex justify-content-between ${styles.btns}`}
+                  >
+                    <PrimaryButton isLink={true} href="/advisory">
+                      Explore Further
+                    </PrimaryButton>
+                  </div>
+                </div>
               </Link>
-            </div> 
+            </div>
+          </div>
+
+          {/* Card 4 - IT Services */}
+          <div className={`col-md-6 col-lg-3`}>
+            <div className={styles.card}>
+              <Link
+                href="/it-services"
+                passHref
+                className={`${styles.cardLink}`}
+              >
+                <div className={styles.imageContainer}>
+                  <Image
+                    className={`${styles.radius} ${styles.cardImage}`}
+                    src={ITService}
+                    width={480}
+                    height={550}
+                    alt="IT Services"
+                  />
+                  <div className={styles.imageOverlay}>
+                    <h3 className={styles.cardTitle}>IT Services</h3>
+                  </div>
+                </div>
+
+                <div className={`${styles.cardContent}`}>
+                  <div
+                    className={`mx-auto d-flex justify-content-between ${styles.btns}`}
+                  >
+                    <PrimaryButton isLink={true} href="/itServices">
+                      Explore Further
+                    </PrimaryButton>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
         </motion.div>
       </div>
